@@ -143,11 +143,6 @@ addons:
   apt:
     packages:
     - oracle-java8-installer
-env:
-  global:
-  - secure: ...
-  - secure: ...
-  - secure: ...
 script: travis_wait 360 mvn clean test -U
 before_deploy:
   - gpg --import .travis.key.gpg
@@ -160,7 +155,7 @@ deploy:
     tags: true
 ```
 
-其中 `env.global` 下有三個 secure 變數, 我們會透過 Travis CLI 來自動產生:
+接著我們再透過 Travis CLI 來將重要資料加密, 並自動增加到 `.travis.yml` 中:
 
 ```
 $ travis encrypt -r {travis-username}/{repository} "OSSRH_USERNAME={your-ossrh-username}" --add
