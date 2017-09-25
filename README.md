@@ -2,12 +2,12 @@
 
 Maven 真的很方便, 你是否曾經也像我一樣, 好奇要怎麼發佈自己的 library 到 maven, 讓別人也很方便的使用? 這次將以前的一些經驗整理成懶人包, 用最短的時間內跟大家分享。
 
-[![ELI5](ELI5.draw.io.jpg)](ELI5.draw.io.jpg)
-
 這次的懶人包, 是以 [GitHub](https://github.com) 作為 SCM, 並整合 [Travis CI](https://travis-ci.org) 來幫我們自動測試及部署, 目的是讓 Travis CI 自動偵測:
 
 - 每次 push 或 pull request 到 GitHub 時, 自動執行 test
 - 每次建立 tag 或 draft a new release 時, 自動發佈到 Maven central repository
+
+[![ELI5](ELI5.draw.io.jpg)](ELI5.draw.io.jpg)
 
 ## OSSRH Setup
 
