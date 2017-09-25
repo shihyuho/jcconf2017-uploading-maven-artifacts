@@ -155,12 +155,22 @@ deploy:
     tags: true
 ```
 
-接著我們再透過 Travis CLI 來將重要資料加密, 並自動增加到 `.travis.yml` 中:
+接著我們再透過 Travis CLI 來將重要資料加密, 在 `.travis.yml` 同一層目錄下執行:
 
 ```
 $ travis encrypt -r {travis-username}/{repository} "OSSRH_USERNAME={your-ossrh-username}" --add
 $ travis encrypt -r {travis-username}/{repository} "OSSRH_PASSWORD={your-ossrh-password}" --add
 $ travis encrypt -r {travis-username}/{repository} "GPG_PASSPHRASE={your-gpg-passphrase}" --add
+```
+
+完成後再查看 `.travis.yml`, 會多了 `env.global` 且已被加上 3 個 secure 變數:
+
+```yaml
+env:
+  global:
+  - secure: ...
+  - secure: ...
+  - secure: ...
 ```
 
 #### .travis.key.gpg
