@@ -216,6 +216,8 @@ $ curl http://search.maven.org/solrsearch/select?q=g:"{your-groupId}"&wt=json | 
 
 最後當然 repository 的 `README.md` 上也要記得加上 Travis CI 測試結果的圖案: 
 
+[![Build Status](https://travis-ci.org/shihyuho/jsr303-validator.svg?branch=master)](https://travis-ci.org/shihyuho/jsr303-validator)
+
 ```
 [![Build Status](https://travis-ci.org/{travis-username}/{repository}.svg?branch=master)](https://travis-ci.org/{travis-username}/{repository})
 ```
