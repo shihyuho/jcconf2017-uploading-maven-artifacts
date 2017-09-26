@@ -209,7 +209,7 @@ env:
 </settings>
 ```
 
-### Maven Central Repository
+## Maven Central Repository
 
 透過以上的設定就算是完成了, 使用瀏覽器到 `https://github.com/{github-username}/{repository}/releases` 中發佈一個 release, 完成後你再到 [https://oss.sonatype.org](https://oss.sonatype.org) 檢查上傳結果, 或執行:
 
