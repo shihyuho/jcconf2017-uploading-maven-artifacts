@@ -98,7 +98,7 @@ gpg -a --export-secret-key {key-id} > .travis.key.gpg
 
 ### Travis CLI
 
-[Travis CLI](https://github.com/travis-ci/travis.rb#installation) 可以幫我們把重要資訊加密, 安裝前請確保系統上已經先安裝好 [Ruby](http://www.ruby-lang.org/en/downloads/), macos 可以下
+[Travis CLI](https://github.com/travis-ci/travis.rb#installation) 可以幫我們把重要資訊加密, 安裝前請確保系統上已經先安裝好 [Ruby](http://www.ruby-lang.org/en/downloads/) 2.0.0 版本以上, macos 可以下
 
 ```
 $ brew install ruby
