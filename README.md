@@ -70,7 +70,7 @@ pub   2048R/{key-id} 2016-12-15
 ...
 ```
 
-這邊可以看到目前有一把 public key, 接著要把這把 key 發佈到 *sks-keyservers.net*
+這邊可以看到目前有一把 public key, 接著要把這把 key 發佈到 *pool.sks-keyservers.net*
 
 ```
 $ gpg --keyserver hkp://pool.sks-keyservers.net --send-keys {key-id}
